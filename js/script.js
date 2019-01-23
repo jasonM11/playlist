@@ -6,10 +6,20 @@ var songs = ["All your Love","Only in the west","Automatic"];
 // Make sure they match the same order as your array above
 var artist = ["JakobOgawa","Yeek","Sheff G"];
 
-
+var images = ["https://i1.sndcdn.com/artworks-000204896283-qzx2f9-t500x500.jpg",""];
 function displaySongInfo(){
+    
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
-
+    songs.forEach(function(name){
+        $("#songs").append("<p>"+name +"</p>");
+    });
+    artist.forEach(function(person){
+        $("#artists").append("<p>"+person+"</p>");
+    });
+        
+        
+       // $("body").append(<img src" + picture + ">")");
+    
 }
 
 function emptySongInfo(){
